@@ -31,7 +31,7 @@ jobs:
         working-directory: frontend
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
-          VITE_API_URL: ${{ vars.VITE_API_URL }}
+          VITE_API_URL: https://jobscraper-zeta.vercel.app
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
